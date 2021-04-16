@@ -1,0 +1,12 @@
+<p>
+  tab2 works! Hello {{ greeting.hello }}
+</p>
+
+<hr />
+Com: {{ tabCommunicator.communicationData | async}}
+
+<hr />
+<input type="text" [(ngModel)]="dataToSend" />
+
+<button (click)="sendData()">Send {{dataToSend}} to other tabs</button>
+<input type="text" />
